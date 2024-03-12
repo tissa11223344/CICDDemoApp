@@ -52,7 +52,7 @@ jobs:
       - name: build archive
         run: |
           xcodebuild -scheme "CICDDemoApp" \
-          -workspace "CICDDemoApp.xcworkspace" \ # Adjust based on your project file name
+          -workspace "CICDDemoApp.xcworkspace" \
           -archivePath $RUNNER_TEMP/CICDDemoApp.xcarchive \
           -sdk iphonesimulator \
           -configuration Debug \
