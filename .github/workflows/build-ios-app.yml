@@ -12,20 +12,11 @@ jobs:
       - name: Check Xcode version
         run: xcodebuild -version
         
-      - name: Test Decoded plist (local)
+      - name: Decode export options plist
         run: |
-          echo "${{ secrets.EXPORT_OPTIONS_PLIST }}" | base64 --decode > decoded_plist.txt
-
-
-      - name: Decode export options plist (debug)
-        run: |
-          echo "Decoded plist:"
-          echo "${{ secrets.EXPORT_OPTIONS_PLIST }}" | base64 --decode | plutil -p
-
+          echo "${{ secrets.EXPORT_OPTIONS_PLIST }}" | base64 --decode > export_options.plist
       - name: Test secret value
         run: echo "${{ secrets.EXPORT_OPTIONS_PLIST }}"
-      - name: Echo Export Options Plist
-        run: echo "$EXPORT_OPTIONS_PLIST"
 
       - name: Checkout repository
         uses: actions/checkout@v3
