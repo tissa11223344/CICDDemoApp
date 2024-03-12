@@ -28,11 +28,6 @@ jobs:
 
       - name: Checkout repository
         uses: actions/checkout@v3
-        
-      - name: Use specific Xcode version (optional)
-        uses: xcode-actions/setup-xcode@v2
-        with:
-          xcode-version: '14.2'
 
       - name: Install CocoaPods dependencies
         run: |
