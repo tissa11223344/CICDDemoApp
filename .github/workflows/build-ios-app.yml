@@ -1,4 +1,4 @@
-name: Build iOS app github
+name: Build iOS applications CICD
 
 on:
   push:
