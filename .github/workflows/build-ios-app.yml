@@ -1,4 +1,4 @@
-name: Build iOS application github
+name: Build iOS app github
 
 on:
   push:
