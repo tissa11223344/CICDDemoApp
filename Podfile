@@ -7,7 +7,7 @@ target 'CICDDemoApp' do
 
   # Pods for CICDDemoApp
   
-pod 'Alamofire', '~> 5.2'
+pod 'Alamofire', '~> 5.0'
 pod 'SDWebImage'
 
 end
