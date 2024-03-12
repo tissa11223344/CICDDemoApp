@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
     <key>method</key>
-    <string>Development</string>
+    <string>development</string>
     <key>teamID</key>
     <string>8H4VCQCSWU</string>
     <key>uploadSymbols</key>
     <true/>
     <key>signingStyle</key>
-    <string>Manual</string>
+    <string>manual</string>
     <key>signingCertificate</key>
-    <string>iPhone Development: Tissa Technology</string>
+    <string>iPhone Development: TISSA Technology</string>
 </dict>
 </plist>
