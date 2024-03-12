@@ -3,7 +3,7 @@ name: Build iOS applications
 on:
   push:
     paths:
-      - .github/workflows/build_ios-app.yml
+      - .github/workflows/build-ios-app.yml
 
 jobs:
   build_with_signing:
