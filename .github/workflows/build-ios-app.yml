@@ -46,22 +46,13 @@ jobs:
 
       - name: build archive
         run: |
-#          xcodebuild -scheme "CICDDemoApp" \
-#          -archivePath $RUNNER_TEMP/CICDDemoApp.xcarchive \
-#          -sdk iphonesimulator \
-#          -configuration Debug \
-#          -destination generic/platform=iOS \
-#          -allowProvisioningUpdates \
-#          clean archive
-          
-          
           xcodebuild -scheme "CICDDemoApp" \
-         -archivePath $RUNNER_TEMP/CICDDemoApp.xcarchive \
-         -sdk iphonesimulator \
-         -configuration Debug \
-         -destination generic/platform=iOS \
-         clean archive \
-         -allowProvisioningUpdates
+          -archivePath $RUNNER_TEMP/CICDDemoApp.xcarchive \
+          -sdk iphonesimulator \
+          -configuration Debug \
+          -destination generic/platform=iOS \
+          clean archive \
+          -allowProvisioningUpdates
 
 
       - name: export ipa
