@@ -1,8 +1,9 @@
 name: Build iOS applications
 
 on:
-  workflow_dispatch:
-    branches: [main]
+   push:
+    paths:
+      - .github/workflows/build_ios-app.yml
 
 jobs:
   build_with_signing:
