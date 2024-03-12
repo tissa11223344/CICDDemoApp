@@ -10,11 +10,19 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Check Xcode version
-        run: xcodebuild -version
-        
+        run: |
+          xcode_version=$(xcodebuild -version | grep "Xcode")
+          if [[ "$xcode_version" =~ "Xcode 13" || "$xcode_version" =~ "Xcode 14" ]]; then
+            echo "Xcode version is compatible: $xcode_version"
+          else
+            echo "Error: Xcode version $xcode_version is not supported. Please use Xcode 13 or above."
+            exit 1
+          fi
+
       - name: Decode export options plist
         run: |
           echo "${{ secrets.EXPORT_OPTIONS_PLIST }}" | base64 --decode > export_options.plist
+
       - name: Test secret value 
         run: echo "${{ secrets.EXPORT_OPTIONS_PLIST }}"
 
