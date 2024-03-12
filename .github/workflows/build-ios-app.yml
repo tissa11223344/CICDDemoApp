@@ -1,7 +1,7 @@
 name: Build iOS applications
 
 on:
-   push:
+  push:
     paths:
       - .github/workflows/build_ios-app.yml
 
@@ -69,4 +69,3 @@ jobs:
           # you can also archive the entire directory
           # path: ${{ runner.temp }}/build
           retention-days: 3
-
