@@ -12,9 +12,15 @@ jobs:
       - name: Check Xcode version
         run: xcodebuild -version
         
-      - name: Decode export options plist
+      - name: Decode export options plist OLD
         run: |
           echo "${{ secrets.EXPORT_OPTIONS_PLIST }}" | base64 --decode > export_options.plist
+
+      - name: Decode export options plist (debug)
+        run: |
+          echo "Decoded plist:"
+          echo "${{ secrets.EXPORT_OPTIONS_PLIST }}" | base64 --decode | plutil -p
+
       - name: Test secret value
         run: echo "${{ secrets.EXPORT_OPTIONS_PLIST }}"
       - name: Echo Export Options Plist
@@ -22,6 +28,11 @@ jobs:
 
       - name: Checkout repository
         uses: actions/checkout@v3
+        
+      - name: Use specific Xcode version (optional)
+        uses: xcode-actions/setup-xcode@v2
+        with:
+          xcode-version: '14.2'
 
       - name: Install CocoaPods dependencies
         run: |
