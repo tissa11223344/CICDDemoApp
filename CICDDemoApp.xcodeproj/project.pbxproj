@@ -14,7 +14,7 @@
 		062B31312BA01C43000A18D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062B31302BA01C43000A18D7 /* Assets.xcassets */; };
 		062B31342BA01C43000A18D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062B31322BA01C43000A18D7 /* LaunchScreen.storyboard */; };
 		062B313C2BA0320E000A18D7 /* ExportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 062B313B2BA0320E000A18D7 /* ExportOptions.plist */; };
-		3794E6DEC903519CA95215AD /* Pods_CICDDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B71269C6AA5AF42217F5205 /* Pods_CICDDemoApp.framework */; };
+		3794E6DEC903519CA95215AD /* Pods_CICDDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B71269C6AA5AF42217F5205 /* Pods_CICDDemoApp.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
