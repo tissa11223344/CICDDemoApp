@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>method</key>
-    <string>package</string>
+    <string>enterprise</string>
     <key>teamID</key>
     <string>8H4VCQCSWU</string>
     <key>uploadSymbols</key>
