@@ -197,12 +197,15 @@ jobs:
   build:
     runs-on: macOS-latest
     steps:
-    - uses: actions/checkout@v2
+#    - uses: actions/checkout@v2
+    
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-    - name: Set up Xcode
-      uses: actions/setup-xcode@v2
-      with:
-        xcode-version: '13.x'
+#    - name: Set up Xcode
+#      uses: actions/setup-xcode@v2
+#      with:
+#        xcode-version: '13.x'
 
     - name: Install CocoaPods
       run: |
