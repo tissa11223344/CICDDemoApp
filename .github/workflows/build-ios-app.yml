@@ -100,7 +100,7 @@
 
 
 
-name: Build iOS application CICD
+name: Build iOS app
 
 on:
   push:
