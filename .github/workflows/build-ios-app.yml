@@ -186,7 +186,7 @@
 #          path: $GITHUB_WORKSPACE/CICDDemoApp.ipa
 
 
-name: iOS Build and Archive
+name: iOS Build and Archivee
 
 on:
   push:
