@@ -168,7 +168,7 @@ jobs:
 
           # Export IPA
           xcodebuild -exportArchive -archivePath $RUNNER_TEMP/CICDDemoApp.xcarchive \
-          -exportOptionsPlist $RUNNER_TEMP/export_options.plist \
+          -exportOptionsPlist $RUNNER_TEMP/ExportOptions.plist \
           -exportPath $RUNNER_TEMP/build
 
           # Move IPA to workspace
