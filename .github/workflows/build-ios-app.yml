@@ -165,7 +165,7 @@ jobs:
       - name: Generate and archive
         run: |
           xcodebuild -workspace "CICDDemoApp.xcworkspace" \
-          -scheme "CICDDemoApp" \
+          -scheme "CICDDemoApp.app" \
           -configuration Debug \
           -archivePath $RUNNER_TEMP/CICDDemoApp.xcarchive \
           clean archive \
