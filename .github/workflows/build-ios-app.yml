@@ -100,7 +100,7 @@
 
 
 
-name: Build iOS application
+name: Build iOS app
 
 on:
   push:
