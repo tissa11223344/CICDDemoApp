@@ -191,7 +191,7 @@
 
 
 
-name: Build iOS app and export IPA
+name: Build iOS app
 
 on:
   push:
